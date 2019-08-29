@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700&display=swap");
+/********************* reset */
+html,
+body {
+	margin: 0;
+	font-family: "Open Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+h2 {
+	text-transform: uppercase;
+}
+p {
+	line-height: 24px;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+/********************* typo */
+h1 {
+	font-size: 48px;
+}
+h2 {
+	font-size: 36px;
+}
+/********************* colors */
+.text-color-white {
+	color: white;
+}
+.bg-color-blue {
+	background-color: #0d50a8;
+}
+.bg-color-lightblue {
+	background-color: #3981e0;
+}
+.bg-color-yellow {
+	background-color: #e8bc1b;
+}
+/********************* grid */
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.flex {
+	display: flex;
+}
+.h-space-between {
+	justify-content: space-between;
+}
+.v-center {
+	align-items: center;
+}
+/********************* buttons */
+
+.button {
+	padding: 16px 32px;
+	color: white;
+	text-decoration: none;
+	border-radius: 10px;
+	display: inline-block;
+	transition: 200ms ease-in-out;
+}
+.button-primary {
+	background-color: #3981e0;
+}
+.button-primary:hover {
+	background-color: #0d50a8;
+}
+
+/********************* asides */
+
+aside {
+	background-color: grey;
+	padding: 5px;
+}
+
+/********************* hero */
+
+#hero {
+	background-image: url("../images/hero.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 100px 0;
+}
+/********************* about */
+
+#about {
+	padding-top: 100px;
+}
+#about h2 {
+	margin-top: 100px;
+}
+#about .col {
+	max-width: 650px;
+}
+
+#about .button {
+	margin-top: 40px;
+}
