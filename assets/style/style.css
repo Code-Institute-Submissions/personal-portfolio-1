@@ -29,6 +29,9 @@ button {
 	cursor: pointer;
 	font-size: 16px;
 }
+figure {
+	margin: 0;
+}
 /********************* typo */
 h1 {
 	font-size: 48px;
@@ -39,6 +42,9 @@ h2 {
 /********************* colors */
 .text-color-white {
 	color: white;
+}
+.text-color-blue {
+	color: #0d50a8;
 }
 .bg-color-blue {
 	background-color: #0d50a8;
@@ -63,6 +69,9 @@ h2 {
 .h-space-between {
 	justify-content: space-between;
 }
+.h-space-around {
+	justify-content: space-around;
+}
 .v-center {
 	align-items: center;
 }
@@ -79,11 +88,10 @@ h2 {
 	display: inline-block;
 	transition: 200ms ease-in-out;
 }
+
 .button-primary {
-	background-color: #3981e0;
-}
-.button-primary:hover {
-	background-color: #0d50a8;
+	background-color: #e8bc1b;
+	padding: 16px 80px;
 }
 
 /********************* form */
@@ -100,24 +108,55 @@ h2 {
 aside {
 	padding: 5px;
 }
-aside .aside-links li:not(:last-child) {
-	margin-right: 20px;
+aside .aside-links li {
+	margin-left: 20px;
+}
+aside a {
+	font-size: 12px;
+}
+
+/********************* header */
+header {
+	width: 100%;
+	position: absolute;
+	top: 70px;
+	left: 0;
+}
+header .primary-nav li {
+	margin-left: 20px;
+}
+header .primary-nav li a {
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 200ms;
+}
+header .primary-nav li a:hover {
+	color: #e8bc1b;
 }
 /********************* hero */
 
 #hero {
 	background-image: url("../images/hero.jpg");
-	background-size: cover;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	padding: 100px 0;
+}
+#hero .container {
+	height: 75vh;
+}
+#hero .col {
+	max-width: 500px;
+}
+#hero .button {
+	margin-top: 50px;
+}
+#hero img {
+	transform: translateY(180px);
 }
 /********************* about */
-
 #about {
-	padding-top: 100px;
-}
-#about h2 {
-	margin-top: 100px;
+	padding: 50px 0;
 }
 #about .col {
 	max-width: 650px;
@@ -127,11 +166,41 @@ aside .aside-links li:not(:last-child) {
 	margin-top: 40px;
 }
 
+#project {
+	padding: 100px 0;
+}
+#project h2 {
+	text-align: center;
+}
+#project .container {
+	max-width: 1200px;
+}
+#project .row {
+	flex-wrap: wrap;
+}
+#project .project-item {
+	background-image: url("../images/work-item.jpg");
+	margin-top: 50px;
+	padding: 10px;
+	max-width: 300px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 0.7;
+	cursor: pointer;
+}
+#project .project-item:hover {
+	opacity: 1;
+}
+#project .project-item img {
+	width: 100%;
+}
+
 /********************* contact */
 
 #contact {
 	padding: 100px 0;
 }
+
 #contact .personal-info {
 	width: 350px;
 }

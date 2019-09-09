@@ -10,58 +10,98 @@
 	<body>
 		<aside class="bg-color-blue">
 			<div class="container flex h-space-between">
-				<span class="text-color-white">jomarialang31@gmail.com</span>
+				<a href="mailto:jomarialang31@gmail.com" class="text-color-white"
+					>jomarialang31@gmail.com</a
+				>
 				<ul class="aside-links flex">
 					<li>
-						<a class="text-color-white" href="https://github.com/chipchap31"
+						<a
+							class="text-color-white"
+							target="_blank"
+							href="https://github.com/chipchap31"
 							>github</a
 						>
 					</li>
 					<li>
-						<a class="text-color-white" href="https://github.com/chipchap31"
+						<a
+							class="text-color-white"
+							target="_blank"
+							href="https://github.com/chipchap31"
 							>linkedIn</a
 						>
 					</li>
 				</ul>
 			</div>
 		</aside>
-
+		<header>
+			<div class="container flex h-space-between v-center">
+				<a href="index.html" class="logo">logo</a>
+				<ul class="primary-nav flex">
+					<li><a href="#about" class="text-color-white">about</a></li>
+					<li><a href="#works" class="text-color-white">works</a></li>
+					<li><a href="#contact" class="text-color-white">contact</a></li>
+				</ul>
+			</div>
+		</header>
 		<section id="hero">
-			<div class="container">
-				<header>
-					header
-				</header>
-				<h1 class="text-color-white">Full Stack Developer</h1>
-				<p class="text-color-white">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-					suspendisse ultrices gravida. commodo viverra maecenas accumsan lacus
-					vel facilisis.
-				</p>
+			<div class="container flex v-center h-space-between">
+				<div class="col">
+					<h1 class="text-color-white">Full Stack Developer</h1>
+					<p class="text-color-white">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+					<a href="#project" class="button button-primary">Works</a>
+				</div>
+				<img src="assets/images/portrait.png" />
 			</div>
 		</section>
-		<section id="about" class="bg-color-yellow ">
+		<section id="about">
 			<div class="container flex h-space-between">
-				<img src="assets/images/portrait.jpg" />
 				<div class="col">
-					<h2 class="text-color-white">about</h2>
-					<p class="text-color-white">
+					<h2 class="text-color-blue">about</h2>
+					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
 						ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
 						accumsan lacus vel facilisis.
 					</p>
-					<p class="text-color-white">
+					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
 						ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
 						accumsan lacus vel facilisis.
 					</p>
-					<a class="button button-primary" href="#">Download CV</a>
+					<a class="button button-primary" href="#">View CV</a>
 				</div>
 			</div>
 		</section>
 
+		<section id="project">
+			<div class="container">
+				<h2>recent projects</h2>
+				<div class="row flex h-space-around">
+					<figure class="project-item">
+						<img src="assets/images/placeholder.jpg" alt="" />
+					</figure>
+					<figure class="project-item">
+						<img src="assets/images/placeholder.jpg" alt="" />
+					</figure>
+					<figure class="project-item">
+						<img src="assets/images/placeholder.jpg" alt="" />
+					</figure>
+					<figure class="project-item">
+						<img src="assets/images/placeholder.jpg" alt="" />
+					</figure>
+					<figure class="project-item">
+						<img src="assets/images/placeholder.jpg" alt="" />
+					</figure>
+					<figure class="project-item">
+						<img src="assets/images/placeholder.jpg" alt="" />
+					</figure>
+				</div>
+			</div>
+		</section>
 		<section id="contact" class="bg-color-lightblue">
 			<div class="container">
 				<h2 class="text-color-white">contact me</h2>
@@ -74,7 +114,7 @@
 							</div>
 							<div class="col">
 								<p>jomarialang31@gmail.com</p>
-								<p>+353851790143</p>
+								<p>+353 851790143</p>
 							</div>
 						</div>
 
