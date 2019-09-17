@@ -284,6 +284,9 @@ footer {
 }
 
 @media only screen and (max-width: 375px) {
+	aside {
+		display: none;
+	}
 	html,
 	body {
 		font-size: 15px;
