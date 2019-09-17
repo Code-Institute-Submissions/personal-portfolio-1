@@ -5,6 +5,7 @@ body {
 	margin: 0;
 	font-family: "Open Sans", sans-serif;
 	scroll-behavior: smooth;
+	font-size: 16px;
 }
 h1,
 h2,
@@ -36,10 +37,10 @@ figure {
 
 /********************* typo */
 h1 {
-	font-size: 48px;
+	font-size: 3rem;
 }
 h2 {
-	font-size: 36px;
+	font-size: 2.25rem;
 }
 /********************* colors */
 .text-color-white {
@@ -283,6 +284,10 @@ footer {
 }
 
 @media only screen and (max-width: 375px) {
+	html,
+	body {
+		font-size: 15px;
+	}
 	header .primary-nav {
 		display: none;
 	}
@@ -293,7 +298,7 @@ footer {
 		background-size: cover;
 	}
 	#hero .container {
-		height: 100vh;
+		height: 95vh;
 	}
 	#hero .col {
 		max-width: 100%;
@@ -323,7 +328,7 @@ footer {
 		width: 30%;
 	}
 	#skills .skills-chart {
-		width: 75%;
+		width: 80%;
 	}
 	#skills .skills-list li {
 		margin-bottom: 1em;
