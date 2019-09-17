@@ -4,6 +4,7 @@ html,
 body {
 	margin: 0;
 	font-family: "Open Sans", sans-serif;
+	scroll-behavior: smooth;
 }
 h1,
 h2,
@@ -32,6 +33,7 @@ button {
 figure {
 	margin: 0;
 }
+
 /********************* typo */
 h1 {
 	font-size: 48px;
@@ -65,12 +67,16 @@ h2 {
 
 .flex {
 	display: flex;
+	flex-wrap: wrap;
 }
 .h-space-between {
 	justify-content: space-between;
 }
 .h-space-around {
 	justify-content: space-around;
+}
+.h-center {
+	justify-content: center;
 }
 .v-center {
 	align-items: center;
@@ -156,16 +162,53 @@ header .primary-nav li a:hover {
 }
 /********************* about */
 #about {
-	padding: 50px 0;
+	padding: 100px 0;
 }
 #about .col {
-	max-width: 650px;
+	max-width: 550px;
+	text-align: right;
 }
 
 #about .button {
 	margin-top: 40px;
 }
 
+#skills {
+	padding: 50px 0;
+}
+#skills .skills-list {
+	margin-right: 50px;
+}
+#skills .skills-list li span {
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	margin-right: 1em;
+}
+#skills .skills-list li {
+	margin-bottom: 1em;
+	text-transform: uppercase;
+}
+#skills .skills-list li:nth-of-type(1) span {
+	background-color: #3981e0;
+}
+#skills .skills-list li:nth-of-type(2) span {
+	background-color: #ad541a;
+}
+
+#skills .skills-list li:nth-of-type(3) span {
+	background-color: #54507a;
+}
+
+#skills .skills-list li:nth-of-type(4) span {
+	background-color: #164d94;
+}
+#skills .skills-list li:nth-of-type(5) span {
+	background-color: #406618;
+}
+#skills .goals {
+	max-width: 550px;
+}
 #project {
 	padding: 100px 0;
 }
@@ -225,4 +268,34 @@ header .primary-nav li a:hover {
 	text-indent: 5px;
 	resize: none;
 	padding: 10px 0;
+	width: 100%;
+}
+
+footer {
+	padding: 30px 0;
+	text-align: center;
+}
+
+@media only screen and (max-width: 375px) {
+	.container {
+		width: 100%;
+	}
+	#hero {
+		background-size: cover;
+	}
+	#hero .container {
+		height: 100vh;
+	}
+	#hero .col {
+		max-width: 100%;
+		text-align: center;
+	}
+
+	#hero img {
+		display: none;
+	}
+
+	#about .col {
+		text-align: center;
+	}
 }
