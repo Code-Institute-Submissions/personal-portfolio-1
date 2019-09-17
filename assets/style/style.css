@@ -93,6 +93,7 @@ h2 {
 	border-radius: 10px;
 	display: inline-block;
 	transition: 200ms ease-in-out;
+	text-transform: uppercase;
 }
 
 .button-primary {
@@ -154,10 +155,15 @@ header .primary-nav li a:hover {
 #hero .col {
 	max-width: 500px;
 }
+#hero .portrait-mobile {
+	display: none;
+	width: 100%;
+	margin: 0 auto;
+}
 #hero .button {
 	margin-top: 50px;
 }
-#hero img {
+#hero .portrait {
 	transform: translateY(180px);
 }
 /********************* about */
@@ -277,6 +283,9 @@ footer {
 }
 
 @media only screen and (max-width: 375px) {
+	header .primary-nav {
+		display: none;
+	}
 	.container {
 		width: 100%;
 	}
@@ -290,6 +299,10 @@ footer {
 		max-width: 100%;
 		text-align: center;
 	}
+	#hero .portrait-mobile {
+		display: block;
+		width: 70%;
+	}
 
 	#hero img {
 		display: none;
@@ -297,5 +310,32 @@ footer {
 
 	#about .col {
 		text-align: center;
+	}
+	#skills {
+		padding: 50px 0;
+	}
+	#skills .col {
+		justify-content: center;
+	}
+	#skills .skills-list {
+		margin-right: 0;
+		margin-bottom: 50px;
+		width: 30%;
+	}
+
+	#skills .skills-list li {
+		margin-bottom: 1em;
+		text-transform: uppercase;
+		justify-content: center;
+	}
+	#skills .skills-list li span {
+		height: 20px;
+		width: 100%;
+		margin: 0;
+	}
+	#skills .goals {
+		max-width: 100%;
+		text-align: center;
+		margin-top: 100px;
 	}
 }
