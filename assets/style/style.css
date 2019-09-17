@@ -301,7 +301,7 @@ footer {
 	}
 	#hero .portrait-mobile {
 		display: block;
-		width: 70%;
+		width: 50%;
 	}
 
 	#hero img {
@@ -322,7 +322,9 @@ footer {
 		margin-bottom: 50px;
 		width: 30%;
 	}
-
+	#skills .skills-chart {
+		width: 75%;
+	}
 	#skills .skills-list li {
 		margin-bottom: 1em;
 		text-transform: uppercase;
