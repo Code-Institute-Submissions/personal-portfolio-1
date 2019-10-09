@@ -241,15 +241,12 @@ header .primary-nav li a:hover {
 	max-width: 1030px;
 }
 #project .project-item {
-	background-image: url("../images/work-item.jpg");
 	margin-top: 20px;
 
 	position: relative;
 	max-width: 500px;
 	height: 500px;
 	width: 500px;
-	background-size: cover;
-	background-repeat: no-repeat;
 
 	overflow: hidden;
 }
@@ -397,5 +394,9 @@ footer {
 		max-width: 100%;
 		text-align: center;
 		margin-top: 100px;
+	}
+	#project .project-item:hover img {
+		transform: scale(1);
+		filter: blur(0);
 	}
 }
