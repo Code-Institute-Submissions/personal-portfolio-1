@@ -1,18 +1,22 @@
 # Personal Portfolio - Jomari Alang
 
-One or two paragraphs providing an overview of your project.
+Stream One Project: User-Centric Frontend Development - Code Institute
 
-Essentially, this part is your sales pitch.
+This is my first ever portfolio website for potential employers. The portfolio highlights several of my side projects, as well as a short information about myself, my coding skills and several of personal about me such as the languages that I learned, a bit of information about myself, and contact information.
 
 ## UX
 
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+The main target audience of this portfolio are emplyers, as well as
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
+## Technologies
 
-- As a user type, I want to perform an action, so that I can achieve a goal.
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+  - HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).
+
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+  - Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
 
 ## Features
 
@@ -20,8 +24,8 @@ In this section, you should go over the different parts of your project, and des
 
 ### Existing Features
 
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
+- Contact Form - allows users to send a message to discuss possible jobs or projects, by having them fill out the input fields in the contact section.
+-
 
 For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
 
