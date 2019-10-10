@@ -143,6 +143,27 @@ header .primary-nav li a {
 header .primary-nav li a:hover {
 	color: #e8bc1b;
 }
+header .menu-icon {
+	cursor: pointer;
+	display: none;
+}
+header .menu-icon span {
+	height: 7px;
+	border-radius: 10px;
+	background-color: white;
+	display: block;
+}
+header .menu-icon span:nth-child(1) {
+	width: 50px;
+}
+header .menu-icon span:nth-child(2) {
+	width: 40px;
+	margin-top: 7px;
+}
+header .menu-icon span:nth-child(3) {
+	width: 30px;
+	margin-top: 7px;
+}
 
 /********************* logo */
 
@@ -338,8 +359,14 @@ footer {
 	body {
 		font-size: 15px;
 	}
+	header {
+		top: 30px;
+	}
 	header .primary-nav {
 		display: none;
+	}
+	header .menu-icon {
+		display: block;
 	}
 	.container {
 		width: 100%;
