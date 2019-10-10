@@ -289,17 +289,18 @@ header .menu-icon span:nth-child(3) {
 #project .project-item .overlay h3 {
 	font-size: 24px;
 }
-#project .project-item:hover img {
+.project-item.active .overlay {
+	opacity: 1 !important;
+	z-index: 1;
+}
+.project-item.active img {
 	transform: scale(1.1);
 	filter: blur(8px);
-}
-#project .project-item .overlay:hover {
-	opacity: 1;
-	z-index: 1;
 }
 #project .project-item .actions {
 	margin-top: 20px;
 }
+
 #project .project-item .live {
 	padding: 10px 20px;
 	display: block;
