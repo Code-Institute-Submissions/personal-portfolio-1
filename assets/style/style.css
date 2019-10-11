@@ -148,23 +148,55 @@ header .menu-icon {
 	display: none;
 }
 header .menu-icon span {
-	height: 7px;
+	height: 5px;
 	border-radius: 10px;
 	background-color: white;
 	display: block;
 }
 header .menu-icon span:nth-child(1) {
-	width: 50px;
+	width: 45px;
 }
 header .menu-icon span:nth-child(2) {
-	width: 40px;
+	width: 37px;
 	margin-top: 7px;
 }
 header .menu-icon span:nth-child(3) {
-	width: 30px;
+	width: 27px;
 	margin-top: 7px;
 }
+.mobile-nav.active {
+	opacity: 1;
+	pointer-events: auto;
+}
+.mobile-nav {
+	transition: 200ms;
+	position: fixed;
+	top: 0;
+	opacity: 0;
+	pointer-events: none;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #3981e0;
+	z-index: 1;
+}
+.mobile-nav ul {
+	padding-top: 100px;
+	height: 100%;
+	margin-left: auto;
+}
+.mobile-nav ul li {
+	background-color: #6296da;
+	padding: 20px 0 20px 20px;
+	margin-bottom: 3px;
+}
 
+.mobile-nav ul li a {
+	text-decoration: none;
+	font-size: 18px;
+	text-transform: uppercase;
+	display: block;
+}
 /********************* logo */
 
 .logo {
@@ -198,7 +230,7 @@ header .menu-icon span:nth-child(3) {
 	margin-top: 50px;
 }
 #hero .portrait {
-	transform: translateY(180px);
+	transform: translateY(160px);
 	width: 28vw;
 }
 /********************* about */
@@ -266,13 +298,14 @@ header .menu-icon span:nth-child(3) {
 
 	position: relative;
 	max-width: 500px;
-	height: 500px;
+	height: auto;
 	width: 500px;
 
 	overflow: hidden;
 }
 #project .project-item img {
 	width: 100%;
+	height: 100%;
 	transition: 200ms;
 }
 
@@ -310,9 +343,15 @@ header .menu-icon span:nth-child(3) {
 	color: black;
 	text-decoration: none;
 }
+#project .project-item .live:hover {
+	background-color: #eee;
+}
 #project .project-item .prototype {
 	text-transform: capitalize;
 	margin-left: 1em;
+}
+#project .project-item .prototype:hover {
+	color: #eee;
 }
 /********************* contact */
 
@@ -361,13 +400,17 @@ footer {
 		font-size: 15px;
 	}
 	header {
-		top: 30px;
+		top: 20px;
 	}
 	header .primary-nav {
 		display: none;
 	}
 	header .menu-icon {
 		display: block;
+		z-index: 2;
+	}
+	header .logo {
+		z-index: 2;
 	}
 	.container {
 		width: 100%;
