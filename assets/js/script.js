@@ -1,55 +1,45 @@
-$(document).ready(function() {
-	globalListener();
+(function($) {
+	"use strict";
 
-	onHoverProjects();
-	onScrollPortrait();
-	onClickMenuIcon();
-	onClickMobileLinks();
-});
+	var $projects = $("#project .project-item"),
+		$portrait = $("#hero .portrait"),
+		$portraitPos = $portrait.offset().top,
+		$menuIcon = $("header .menu-icon"),
+		$mobileNav = $(".mobile-nav"),
+		$mobileLink = $(".mobile-nav .mobile-link"),
+		$window = $(window);
 
-function onHoverProjects() {
-	var projects = $("#project .project-item");
-
-	projects.hover(
-		function() {
-			$(this).addClass("active");
-		},
-		function() {
-			$(this).removeClass("active");
-		}
-	);
-}
-
-function onScrollPortrait() {
-	var target = $("#hero .portrait");
-	var initPos = target.offset().top;
-	$(window).scroll(function(event) {
-		var yCoor = $(this).scrollTop();
-		target.css("transform", `translateY(${yCoor * 0.3 + initPos}px)`);
-	});
-}
-
-function onClickMenuIcon() {
-	var trigger = $("header .menu-icon");
-	var target = $(".mobile-nav");
-	trigger.click(function() {
+	function onHoverProjects() {
 		$(this).toggleClass("active");
-		target.toggleClass("active");
-	});
-}
+	}
+	function onScrollPortrait(yCoor) {
+		$portrait.css("top", `${yCoor * 0.3 + $portraitPos}px`);
+	}
+	function onClickMenuIcon() {
+		$(this).toggleClass("active");
+		$mobileNav.toggleClass("active");
+	}
 
-function onClickMobileLinks() {
-	var trigger = $(".mobile-nav .mobile-link");
-	var target = $(".mobile-nav");
+	function onClickMobileLink() {
+		$mobileNav.removeClass("active");
+	}
+	// when the document is fully loaded run the functions below
 
-	trigger.click(function() {
-		target.removeClass("active");
-	});
-}
+	//----------------------------------------------------------
 
-function globalListener() {
-	var target = $(".mobile-nav");
-	$(window).scroll(function() {
-		target.removeClass("active");
+	$(document).ready(function() {
+		$projects.on("mouseover mouseout", onHoverProjects);
+
+		$menuIcon.on("click", onClickMenuIcon);
+
+		$mobileLink.on("click", onClickMobileLink);
+
+		$window.scroll(function() {
+			var yCoor = $(this).scrollTop();
+
+			onScrollPortrait(yCoor);
+
+			$mobileNav.removeClass("active");
+		});
 	});
-}
+})(jQuery);
