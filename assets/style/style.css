@@ -285,6 +285,9 @@ header .menu-icon span:nth-child(3) {
 #skills .goals {
 	max-width: 550px;
 }
+#skills .skills-chart {
+	width: 20vw;
+}
 #project {
 	padding: 100px 0;
 }
@@ -394,7 +397,7 @@ footer {
 	text-align: center;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 500px) and (orientation: portrait) {
 	aside {
 		display: none;
 	}
@@ -472,5 +475,108 @@ footer {
 	#project .project-item:hover img {
 		transform: scale(1);
 		filter: blur(0);
+	}
+}
+
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+	aside {
+		display: none;
+	}
+	html,
+	body {
+		font-size: 15px;
+	}
+	header {
+		top: 20px;
+	}
+	header .primary-nav {
+		display: none;
+	}
+	header .menu-icon {
+		display: block;
+		z-index: 2;
+	}
+	header .logo {
+		z-index: 2;
+	}
+	.container {
+		width: 80%;
+		margin: 0 auto;
+		
+	}
+	#hero {
+		background-size: cover;
+	}
+	#hero .container {
+		height: 130vh;
+	}
+	#hero .col {
+		max-width: 100%;
+		text-align: center;
+	}
+	#hero .portrait-mobile {
+		display: block;
+		width: 20%;
+	}
+
+	#hero img {
+		display: none;
+	}
+
+	#about .col {
+		text-align: center;
+	
+	}
+	
+	#skills {
+		padding: 50px 0;
+	}
+	#skills .container{
+		width: 80%;
+		
+	}
+	
+	
+	#skills .skills-list {
+		margin-right: 0;
+		margin-bottom: 50px;
+		width: 30%;
+	}
+	#skills .col:nth-child(1){
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		width: 100%;
+	}
+	#skills .skills-chart {
+		width: 40vw;
+		
+	}
+	#skills .skills-list li {
+		margin-bottom: 1em;
+		text-transform: uppercase;
+		justify-content: center;
+	}
+	#skills .skills-list li span {
+		height: 20px;
+		width: 100%;
+		margin: 0;
+	}
+	#skills .goals {
+		max-width: 100%;
+		text-align: center;
+		margin-top: 100px;
+	}
+	#project{
+		padding-top: 50px;
+	}
+	#project .project-item:hover img {
+		transform: scale(1);
+		filter: blur(0);
+	}
+	#project .container{
+		width: 98%;
+	}
+	#project .project-item{
+		width: 48%;
 	}
 }
