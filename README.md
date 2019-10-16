@@ -64,6 +64,10 @@ If this section grows too long, you may want to split it off into a separate fil
 
 ## Deployment
 
+The repository for this project contains two branches. The first one is called WIP which is short for working in progress. This branch contains all the initial codes that I have implemented. 
+
+I am still 
+
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
 
 In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
