@@ -25,10 +25,10 @@ The main target audience of this portfolio are employers, as well as charities, 
 ## Testing
 
 * All of the links are working.
-* The images adjusts depending on the width of the view port.
+* The images adjusts depending on the width  of the view port.
 * During my first testing session, I discovered that the project section has uneccessary padding on mobile version.
 * The contact page does not allow for the user to submit if the email is not provided.
-
+* The website is validated in [W3C Validator](https://validator.w3.org) and there are no error found.
 ## Deployment
 
 The repository for this project contains two branches. The first one is called WIP which is short for working in progress. This branch contains all the initial codes that I have implemented. I am still experimenting on the number and name of my branches that I use.

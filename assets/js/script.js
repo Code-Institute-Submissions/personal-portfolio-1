@@ -1,4 +1,4 @@
-(function($) {
+(function ($) {
 	"use strict";
 
 	var $projects = $("#project .project-item"),
@@ -27,14 +27,14 @@
 
 	//----------------------------------------------------------
 
-	$(document).ready(function() {
-		$projects.on("mouseover mouseout", onHoverProjects);
+	$(document).ready(function () {
+		// $projects.on("mouseover mouseout", onHoverProjects);
 
 		$menuIcon.on("click", onClickMenuIcon);
 
 		$mobileLink.on("click", onClickMobileLink);
 
-		$window.scroll(function() {
+		$window.scroll(function () {
 			var yCoor = $(this).scrollTop();
 
 			onScrollPortrait(yCoor);

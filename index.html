@@ -5,26 +5,34 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<link rel="stylesheet" href="assets/style/style.min.css" />
+	<link rel="stylesheet" href="assets/style/style.css" />
 	<title>Personal Portfolio | Jomari Alang</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link rel="shortcut icon" href="assets/images/icon.png">
+	<script src="https://kit.fontawesome.com/13a1217e2a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 	<aside class="bg-color-blue">
 		<div class="container flex h-space-between v-center">
-			<a href="mailto:jomarialang31@gmail.com" class="text-color-white">jomarialang31@gmail.com</a>
+			<span class="aside-email flex v-center">
+				<i class="fas fa-envelope text-color-white"></i>
+				<a href="mailto:jomarialang31@gmail.com" class="text-color-white">
+					jomarialang31@gmail.com</a></span>
+
 			<ul class="aside-links flex">
 				<li>
-					<a class="text-color-white" target="_blank" href="assets/cv/resume.pdf">resumé</a>
+					<a title="resumé]" class="text-color-white" target="_blank" href="assets/cv/resume.pdf"><i
+							class="fas fa-file"></i></a>
 				</li>
 				<li>
-					<a class="text-color-white" target="_blank" href="https://github.com/chipchap31">github</a>
+					<a title="github" class="text-color-white" target="_blank" href="https://github.com/chipchap31"><i
+							class="fab fa-github"></i></a>
 				</li>
 				<li>
-					<a class="text-color-white" target="_blank"
-						href="https://www.linkedin.com/in/jomari-alang-68a071191/">linkedIn</a>
+					<a title="linkedin" class="text-color-white" target="_blank"
+						href="https://www.linkedin.com/in/jomari-alang-68a071191/"><i
+							class="fab fa-linkedin-in"></i></a>
 				</li>
 			</ul>
 		</div>
@@ -65,14 +73,14 @@
 	<section id="hero">
 		<div class="container flex v-center h-space-between">
 			<div class="col">
-				<img class="portrait-mobile" src="assets/images/portrait-mobile.png" alt="" />
+				<img class="portrait-mobile" src="assets/images/portrait-mobile.png" alt="portrait-mobile" />
 				<h1 class="text-color-white">Full Stack Developer</h1>
 				<p class="text-color-white">
 					Let's turn your vision into a powerful web app together.
 				</p>
 				<a href="#project" class="button button-primary">projects</a>
 			</div>
-			<img class="portrait" src="assets/images/portrait.png" />
+			<img class="portrait" src="assets/images/portrait.png" alt="portrait" />
 		</div>
 	</section>
 	<section id="about">
@@ -81,13 +89,11 @@
 				<h2 class="text-color-blue">hello there!</h2>
 				<p>
 					I am an up and coming Front-end Web Developer living in Celbridge, County Kildare.
-					After I graduating in 2009 in Electronic Technology, I
-
 					I am a past student of Colaisté Ide where I studied Electronic Technology. One of the module of the
 					course is Web Authoring where I learned all about the basics of HTML and CSS.
 				</p>
 
-				<a class="button button-primary" target="_blank" href="assets/cv/resume.pdf">View CV</a>
+				<a class="button button-primary" target="_blank" href="assets/cv/resume.pdf">View Resumé</a>
 			</div>
 		</div>
 	</section>
@@ -101,7 +107,7 @@
 					<li class="flex"><span></span>React JS</li>
 					<li class="flex"><span></span>Node JS</li>
 				</ul>
-				<img class="skills-chart" src="assets/images/portfolio-Recovered_09.png" alt="" />
+				<img class="skills-chart" src="assets/images/skills-chart.png" alt="skills-chart" />
 			</div>
 			<div class="goals col">
 				<h2 class="text-color-blue">Goals</h2>
@@ -117,45 +123,68 @@
 		<div class="container">
 			<h2 class="text-color-blue">recent projects</h2>
 			<div class="row flex h-space-between">
+
+				<!-- first project -->
 				<div class="project-item">
-					<div class="overlay flex h-center v-center d-column">
-						<h3 class="text-color-white">Halo-Café Rebranding</h3>
-						<ul class="actions flex v-center">
-							<li>
-								<a target="_blank" class="live" href="https://halo-cafe.herokuapp.com/">
-									view live
-								</a>
-							</li>
-							<li>
-								<a target="_blank" class="prototype text-color-white"
-									href="https://invis.io/WHQXX4FCZGT#/352269783_home">
-									prototype
-								</a>
-							</li>
+					<img src="assets/images/halo-cafe.jpg" alt="halo-cafe">
+					<div class='project-inner'>
+						<div class='project-header flex v-center h-space-between'>
+							<h3 class=" text-color-blue">halo café rebranding</h3> <a target="_blank"
+								class="text-color-white" title="source code"
+								href="https://github.com/chipchap31/personal-portfolio"><i class="fas fa-code"></i></a>
+						</div>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis voluptatem sint maiores
+							non.</p>
+						<ul class='project-actions flex d-column v-center h-space-between'>
+							<li><a target="_blank" class="button button-primary"
+									href="https://halo-cafe.herokuapp.com/">live website</a></li>
+
 						</ul>
 					</div>
-					<img src="assets/images/halo-cafe.jpg" alt="" />
+				</div>
+				<!-- second project -->
+				<div class="project-item">
+					<img src="assets/images/gym.jpg" alt="gym-image">
+					<div class='project-inner'>
+						<div class='project-header flex v-center h-space-between'>
+							<h3 class=" text-color-blue">Gym </h3> <a target="_blank" class="text-color-white"
+								title="source code" href="https://github.com/chipchap31/gym"><i
+									class="fas fa-code"></i></a>
+						</div>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis voluptatem sint maiores
+							non.</p>
+						<ul class='project-actions flex d-column v-center'>
+							<li><a target="_blank" class="button button-primary"
+									href="https://chipchap31.github.io/gym/">live website</a></li>
+
+						</ul>
+					</div>
+				</div>
+				<!-- third project -->
+				<div class="project-item">
+					<img src="assets/images/coach-carter.jpg" alt="coach-carter">
+					<div class='project-inner'>
+						<div class='project-header flex v-center h-space-between'>
+							<h3 class=" text-color-blue">coach carter</h3> <a target="_blank" class="text-color-white"
+								title="source code" href="https://github.com/chipchap31/coachcarter"><i
+									class="fas fa-code"></i></a>
+						</div>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis voluptatem sint maiores
+							non.</p>
+						<ul class='project-actions flex d-column v-center'>
+							<li><a target="_blank" class="button button-primary"
+									href="https://chipchap31.github.io/coachcarter/">live website</a></li>
+
+						</ul>
+					</div>
 				</div>
 
-				<div class="project-item">
-					<div class="overlay flex h-center v-center d-column">
-						<h3 class="text-color-white">Halo-Café Rebranding</h3>
-						<ul class="actions flex v-center">
-							<li>
-								<a target="_blank" class="live" href="https://halo-cafe.herokuapp.com/">
-									view live
-								</a>
-							</li>
-							<li>
-								<a target="_blank" class="prototype text-color-white"
-									href="https://invis.io/WHQXX4FCZGT#/352269783_home">
-									prototype
-								</a>
-							</li>
-						</ul>
-					</div>
-					<img src="assets/images/halo-cafe.jpg" alt="" />
-				</div>
+
+
+
 			</div>
 		</div>
 	</section>
@@ -166,43 +195,49 @@
 				<div class="personal-info text-color-white">
 					<div class="row flex h-space-between">
 						<div class="col">
-							<p><b>Email</b></p>
-							<p><b>Mobile</b></p>
+							<p class="text-color-white"><b>Email</b></p>
+							<p class="text-color-white"><b>Mobile</b></p>
 						</div>
 						<div class="col">
-							<p>jomarialang31@gmail.com</p>
-							<p>+353 851790143</p>
+							<p class="text-color-white">jomarialang31@gmail.com</p>
+							<p class="text-color-white">+353 851790143</p>
 						</div>
 					</div>
 
 					<ul class="useful-links flex d-column">
 						<li>
 							<a href="https://www.facebook.com/jomari.alang.1" target="_blank"
-								class="text-color-white"><b>facebook</b></a>
+								class="link-icon text-color-white"><i class="fab fa-facebook-f"></i></a>
 						</li>
 						<li>
 							<a href="https://twitter.com/chipchap31" target="_blank"
-								class="text-color-white"><b>twitter</b></a>
+								class="link-icon text-color-white"><i class="fab fa-twitter"></i></a>
 						</li>
 						<li>
 							<a href="https://www.instagram.com/emem_31/" target="_blank"
-								class="text-color-white"><b>instagram</b></a>
+								class="link-icon text-color-white"><i class="fab fa-instagram"></i></a>
 						</li>
 						<li>
 							<a href="https://www.linkedin.com/in/jomari-alang-68a071191/" target="_blank"
-								class="text-color-white"><b>linkedIn</b></a>
+								class="link-icon text-color-white"><i class="fab fa-linkedin-in"></i></a>
 						</li>
 						<li>
 							<a href="https://github.com/chipchap31" target="_blank"
-								class="text-color-white"><b>github</b></a>
+								class="link-icon text-color-white"><i class="fab fa-github"></i></a>
 						</li>
 					</ul>
 				</div>
 				<div class="form-wrapper">
 					<form class="flex d-column" method="post" action="success.html">
-						<input placeholder="Your full name" type="text" name="fullname" />
-						<input placeholder="Your email address" type="email" name="email" required />
-						<textarea rows="6" cols="50" placeholder="Your message" name="message"></textarea>
+						<label class="text-color-white" for="fullname">Full Name</label>
+						<input class="text-color-black" id="fullname" placeholder="Your full name" type="text"
+							name="fullname" />
+						<label class="text-color-white" for="email">Email Address</label>
+						<input class="text-color-black" id="email" placeholder="Your email address" type="email"
+							name="email" required />
+						<label class="text-color-white" for="message">Your Message</label>
+						<textarea class="text-color-black" id="message" rows="6" cols="50" placeholder="Your message"
+							name="message"></textarea>
 						<button class="button-submit" type="submit">
 							send
 						</button>
