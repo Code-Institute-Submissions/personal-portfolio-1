@@ -1,17 +1,14 @@
 (function ($) {
 	"use strict";
 
-	var $projects = $("#project .project-item"),
-		$portrait = $("#hero .portrait"),
+	var $portrait = $("#hero .portrait"),
 		$portraitPos = $portrait.offset().top,
 		$menuIcon = $("header .menu-icon"),
 		$mobileNav = $(".mobile-nav"),
 		$mobileLink = $(".mobile-nav .mobile-link"),
 		$window = $(window);
 
-	function onHoverProjects() {
-		$(this).toggleClass("active");
-	}
+
 	function onScrollPortrait(yCoor) {
 		$portrait.css("top", `${yCoor * 0.3 + $portraitPos}px`);
 	}
@@ -28,7 +25,6 @@
 	//----------------------------------------------------------
 
 	$(document).ready(function () {
-		// $projects.on("mouseover mouseout", onHoverProjects);
 
 		$menuIcon.on("click", onClickMenuIcon);
 
