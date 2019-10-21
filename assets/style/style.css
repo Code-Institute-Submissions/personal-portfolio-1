@@ -357,8 +357,9 @@ transition: 200ms;
 /********************* contact */
 
 #contact {
-	padding: 100px 0;
+	padding: 100px 0 0 0;
 }
+
 
 #contact .personal-info {
 	width: 350px;
@@ -367,7 +368,7 @@ transition: 200ms;
 	opacity: 0.7;
 }
 #contact .link-icon{
-	
+	transition: 200ms;
 	border: solid 2px white;
 	border-radius: 50%;
 	height: 50px;
@@ -408,6 +409,28 @@ transition: 200ms;
 footer {
 	padding: 30px 0;
 	text-align: center;
+}
+.back-to-top{
+	text-decoration: none;
+	padding: 50px 0;
+	text-align: center;
+	width: 100%;
+}
+.back-to-top a{
+	margin: 0 auto;
+	text-decoration: none;
+
+	
+	
+}
+.back-to-top i{
+	transition: 200ms;
+	display: block;
+	color: #e8bc1b;
+	
+}
+.back-to-top a:hover i{
+	transform: translateY(-5px);
 }
 
 @media only screen and (max-width: 500px) and (orientation: portrait) {
