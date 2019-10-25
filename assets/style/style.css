@@ -47,7 +47,7 @@ h2 {
 .text-color-white {
 	color: white;
 }
-.text-color-black{
+.text-color-black {
 	color: #4d4d4d;
 }
 .text-color-blue {
@@ -105,7 +105,7 @@ h2 {
 	background-color: #e8bc1b;
 	padding: 16px 80px;
 }
-.button-primary:hover{
+.button-primary:hover {
 	background-color: #d8ae16;
 }
 /********************* form */
@@ -122,21 +122,20 @@ h2 {
 aside {
 	padding: 5px;
 }
-aside .aside-email i{
+aside .aside-email i {
 	margin-right: 5px;
 }
 aside .aside-links li {
 	margin-left: 20px;
 }
-aside .aside-links li a{
+aside .aside-links li a {
 	font-size: 18px;
 }
-aside .aside-links li a:hover{
+aside .aside-links li a:hover {
 	color: #e8bc1b;
 }
 aside a {
 	font-size: 12px;
-
 }
 
 /********************* header */
@@ -236,7 +235,7 @@ header .menu-icon span:nth-child(3) {
 	height: 75vh;
 }
 #hero .col {
-	max-width: 500px;
+	max-width: 50%;
 }
 #hero .portrait-mobile {
 	display: none;
@@ -312,39 +311,34 @@ header .menu-icon span:nth-child(3) {
 	margin-bottom: 70px;
 }
 
-
-#project .project-item img{
-	
+#project .project-item img {
 	width: 100%;
 	height: 200px;
 	display: block;
 }
-#project .project-item h3{
+#project .project-item h3 {
 	font-size: 24px;
 	margin-top: 0;
-	
+
 	text-transform: capitalize;
 }
-#project .project-item{
-	
+#project .project-item {
 	max-width: 350px;
 }
-#project .project-header a{
-
-font-size: 18px;
-height: 40px;
-background-color: rgb(223, 223, 223);
-width: 40px;
-border-radius: 50%;
-line-height: 40px;
-text-align: center;
-transition: 200ms;
-
+#project .project-header a {
+	font-size: 18px;
+	height: 40px;
+	background-color: rgb(223, 223, 223);
+	width: 40px;
+	border-radius: 50%;
+	line-height: 40px;
+	text-align: center;
+	transition: 200ms;
 }
-#project .project-header a:hover{
+#project .project-header a:hover {
 	background-color: #e8bc1b;
 }
-#project .project-inner{
+#project .project-inner {
 	padding: 40px 15px 40px 15px;
 	border: #eee 1px solid;
 	border-top: none;
@@ -353,35 +347,30 @@ transition: 200ms;
 	display: block;
 }
 
-
 /********************* contact */
 
 #contact {
 	padding: 100px 0 0 0;
 }
-
-
+#contact .contact-info {
+	max-width: 50%;
+}
 #contact .personal-info {
-	width: 350px;
+	width: 50%;
+
+	padding: 20px;
+	max-height: 250px;
+	border-radius: 20px;
 }
 #contact .personal-info .row .col p > b {
 	opacity: 0.7;
 }
-#contact .link-icon{
-	transition: 200ms;
-	border: solid 2px white;
-	border-radius: 50%;
-	height: 50px;
-	width: 50px;
-	display: inline-block;
-	line-height: 50px;
-	text-align: center;
-	font-size: 18px;
-}
-#contact .link-icon:hover{
+
+#contact .link-icon:hover {
 	color: #e8bc1b;
 	border-color: #e8bc1b;
 }
+
 #contact .useful-links {
 	margin-top: 50px;
 	max-height: 150px;
@@ -390,10 +379,13 @@ transition: 200ms;
 #contact .useful-links li {
 	margin-bottom: 20px;
 }
+#contact .useful-links li i {
+	margin-right: 5px;
+}
 #contact .form-wrapper {
 	width: 500px;
 }
-#contact .form-wrapper label{
+#contact .form-wrapper label {
 	margin-bottom: 10px;
 }
 #contact .form-wrapper input,
@@ -410,26 +402,22 @@ footer {
 	padding: 30px 0;
 	text-align: center;
 }
-.back-to-top{
+.back-to-top {
 	text-decoration: none;
 	padding: 50px 0;
 	text-align: center;
 	width: 100%;
 }
-.back-to-top a{
+.back-to-top a {
 	margin: 0 auto;
 	text-decoration: none;
-
-	
-	
 }
-.back-to-top i{
+.back-to-top i {
 	transition: 200ms;
 	display: block;
 	color: #e8bc1b;
-	
 }
-.back-to-top a:hover i{
+.back-to-top a:hover i {
 	transform: translateY(-5px);
 }
 
@@ -508,8 +496,7 @@ footer {
 		text-align: center;
 		margin-top: 100px;
 	}
-	#project .project-item{
-		
+	#project .project-item {
 		margin-bottom: 20px;
 	}
 }
@@ -538,7 +525,6 @@ footer {
 	.container {
 		width: 80%;
 		margin: 0 auto;
-		
 	}
 	#hero {
 		background-size: cover;
@@ -561,31 +547,27 @@ footer {
 
 	#about .col {
 		text-align: center;
-	
 	}
-	
+
 	#skills {
 		padding: 50px 0;
 	}
-	#skills .container{
+	#skills .container {
 		width: 80%;
-		
 	}
-	
-	
+
 	#skills .skills-list {
 		margin-right: 0;
 		margin-bottom: 50px;
 		width: 30%;
 	}
-	#skills .col:nth-child(1){
+	#skills .col:nth-child(1) {
 		flex-wrap: nowrap;
 		justify-content: space-between;
 		width: 100%;
 	}
 	#skills .skills-chart {
 		width: 40vw;
-		
 	}
 	#skills .skills-list li {
 		margin-bottom: 1em;
@@ -605,9 +587,8 @@ footer {
 	#project .row {
 		justify-content: center;
 	}
-	#project .project-item{
+	#project .project-item {
 		max-width: 70%;
 		margin-bottom: 20px;
 	}
-	
 }

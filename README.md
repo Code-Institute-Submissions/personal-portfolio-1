@@ -8,7 +8,7 @@ This is my first ever portfolio website for potential employers. The portfolio h
 
 The main target audience of this portfolio are employers, as well as charities, event planners, students and other web developers.
 
-## Features 
+## Features
 
 1. Smooth Scroll - When the user click on any links located at the header. The windows smooth scrolls to that specific section. For example, user clicks on the contact link, the window will go all the way to the button of the page.
 
@@ -32,25 +32,25 @@ For the future, I will leverage [JotForm](https://www.jotform.com/) in order for
 
   - The project uses **JQuery** to simplify DOM manipulation.
 
+- [Font Awesome](https://fontawesome.com/)
+
+  - The project also takes advantage of this free icon library in order to make the site more attractive.
+
 ## Testing
 
-* All of the links are working.
-* The website is mobile-friendly.
-* During my first testing session, I discovered that the project section has uneccessary padding on mobile version.
-* The contact page does not allow for the user to submit if the email is not provided.
-* The website is validated in [W3C Validator](https://validator.w3.org) and there are no error found.
-* The website works with all of the browsers. (Mozilla, Google Chrome, Microsoft Edge, Safari).
+- All of the links are working.
+- The website is mobile-friendly.
+- During my first testing session, I discovered that the project section has uneccessary padding on mobile version.
+- The contact page does not allow for the user to submit if the email is not provided.
+- The website is validated in [W3C Validator](https://validator.w3.org) and there are no error found.
+- The website works with all of the browsers. (Mozilla, Google Chrome, Microsoft Edge, Safari).
 
 ## Deployment
 
 The repository for this project contains two branches. The first one is called WIP which is short for working in progress. This branch contains all the initial codes that I have implemented. I am still experimenting on the number and name of my branches that I use.
 
-I have deployed the website on Github Pages on the domain name called jomarialang.net. 
-
-## Fut
+I have deployed the website on Github Pages on the domain name called jomarialang.net.
 
 ## Media
 
 - The photos used in this site were all edited using Photoshop by myself.
-
-

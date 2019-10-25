@@ -1,4 +1,4 @@
-(function ($) {
+(function($) {
 	"use strict";
 
 	var $portrait = $("#hero .portrait"),
@@ -8,15 +8,18 @@
 		$mobileLink = $(".mobile-nav .mobile-link"),
 		$window = $(window);
 
-
+	// fire this function to gradually move the portrait up and down
+	// depends on the scrolling direction of the user ( up and down)
 	function onScrollPortrait(yCoor) {
 		$portrait.css("top", `${yCoor * 0.3 + $portraitPos}px`);
 	}
+
+	// open and close the mobile navigation window whenever a user clicks on the hamburger
 	function onClickMenuIcon() {
 		$(this).toggleClass("active");
 		$mobileNav.toggleClass("active");
 	}
-
+	// Closes the mobile nav container if the user clicks one of the link
 	function onClickMobileLink() {
 		$mobileNav.removeClass("active");
 	}
@@ -24,13 +27,13 @@
 
 	//----------------------------------------------------------
 
-	$(document).ready(function () {
-
+	$(document).ready(function() {
 		$menuIcon.on("click", onClickMenuIcon);
 
 		$mobileLink.on("click", onClickMobileLink);
 
-		$window.scroll(function () {
+		// closes the mobile navigation window whenever a user scrolls
+		$window.scroll(function() {
 			var yCoor = $(this).scrollTop();
 
 			onScrollPortrait(yCoor);
@@ -39,8 +42,3 @@
 		});
 	});
 })(jQuery);
-
-
-
-
-var multiDimensionalArray = [1, 2, 3, [4, 5, 6, [7, 8, 9, [10, 11, 12, [13, 14, [15]]]]]];
